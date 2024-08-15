@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muestra de Primitivas</title>
+    <link rel="stylesheet" href="css/Estilorocks.css" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="#">Trabajo con DOM y EVENTOS</a>
+        </h1>
+    </header>
+       <!-- el id todo brinda el css para esta caja -->
+    <section class="row conteiner-fluid" id="todo">
+       
+            <aside id="lateral" class="col-sm-3">
+                <select id="temas"> 
+                    <option value="0" selected>Seleccione...</option>
+                    <option value="datos">Datos</option> 
+                    <option value="estilos">Estilos</option>
+                    <option value="imagenes">Galeria</option>
+                </select>
+            </aside>
+    
+        <section id="principal" class="col-sm-9">
+            <!--Grupo de Contenedores que respondan a la funcionalidad-->
+              <article id="datos" class="contenedor">
+                <h3>Inserte Datos</h3>
+                <input type="text" id="palabra" placeholder="introduce una palabra">
+                <input type="text" id="numero" placeholder="introduce una número decimal">
+                <input type="button" value="Mostrar Datos" onclick="mostrarDatos();">
+              </article>
+              
+              
+              <article id="estilos" class="contenedor">
+                <h3>Cambio de Estilos con Funciones Anónimas</h3>
+                <div class="uno" onmouseover="uno();">Estilo 1</div>
+                <div class="dos" onmouseover="dos();">Estilo 2</div>
+                <div class="tres" onmouseover="tres();">Estilo 3</div>
+                <div class="cuatro"onmouseover="cuatro();">Estilo 4</div>
+              </article>
+              <article id="imagenes" class="contenedor">
+                <h3>Trabajo con imágenes</h3>
+                <img id="foto" class="foto" src="img/uno.png" class="galeria">
+                <img src="img/U1.png" class="galeria" onclick="fotografias('U1');">
+                <img src="img/U2.png" class="galeria" onclick="fotografias('U2');">
+                <img src="img/U3.png" class="galeria" onclick="fotografias('U3');">
+                <img src="img/U4.png" class="galeria" onclick="fotografias('U4');">
+            </article>
+            </article>
+               <!--Caja para poner el resultado-->
+            <p id="resultado" class="res">Muestra de Resultados</p>
+        </section>
+    </section>
+    <footer>
+        <h6>Desarrollado por @anahitinocot </h6>  
+        <h6>Temas técnicos-@aha</h6>  
+     </footer>
+     <script src="js/funciones.js"></script>
+     </body>
+     </html>

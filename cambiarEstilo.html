@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Dinámicos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="css/dinamicos.css" id="enlaceEstilos">
+</head>
+<body>
+    <section id="principal">
+        <article id="destacado">
+            <h1>Título del Artículo</h1>
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde esse aliquam ipsa vitae pariatur nisi, sit earum. Dolorum at mollitia ratione quis aperiam consectetur repudiandae iusto dolorem, modi rem!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, pariatur totam. Sunt minus repellat cupiditate ipsum illum soluta consequuntur sint iure at? Similique molestiae soluta odio aperiam. Qui, culpa molestiae.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde esse aliquam ipsa vitae pariatur nisi, sit earum. Dolorum at mollitia ratione quis aperiam consectetur repudiandae iusto dolorem, modi rem!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, pariatur totam. Sunt minus repellat cupiditate ipsum illum soluta consequuntur sint iure at? Similique molestiae soluta odio aperiam. Qui, culpa molestiae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde esse aliquam ipsa vitae pariatur nisi, sit earum. Dolorum at mollitia ratione quis aperiam consectetur repudiandae iusto dolorem, modi rem!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, pariatur totam. Sunt minus repellat cupiditate ipsum illum soluta consequuntur sint iure at? Similique molestiae soluta odio aperiam. Qui, culpa molestiae.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde esse aliquam ipsa vitae pariatur nisi, sit earum. Dolorum at mollitia ratione quis aperiam consectetur repudiandae iusto dolorem, modi rem!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, pariatur totam. Sunt minus repellat cupiditate ipsum illum soluta consequuntur sint iure at? Similique molestiae soluta odio aperiam. </p>
+            <form action="">
+                <input type="radio" name="estilo" value="default" checked  onclick="cambiarEstilo(this.value)">Por defecto<br>
+                <input type="radio" name="estilo" value="pisada" onclick="cambiarEstilo(this.value)" >Pisada<br>
+                <input type="radio" name="estilo" value="mariposa"  onclick="cambiarEstilo(this.value)">Mariposa<br>
+            </form>
+            <hr>
+            <h3>cambiar estilo </h3>
+            <form action="">
+                <input type="radio" name="estilo" value="css/dinamicos.css" checked  onclick="cambiarArchivo(this.value)">Por defecto<br>
+                <input type="radio" name="estilo" value="css/dinamicos1.css" onclick="cambiarArchivo(this.value) " >estilo 1<br>
+                <input type="radio" name="estilo" value="css/dinamicos2.css"  onclick="cambiarArchivo(this.value)">estilo 2<br>
+            </form>
+
+        </article>
+    </section>
+    <script src="js/dinamicos.js"></script>
+    
+</body>
+</html>
